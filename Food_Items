@@ -1,0 +1,7 @@
+CREATE TABLE Food_Items (
+    ID INT PRIMARY KEY AUTO_INCREMENT,
+    food_name VARCHAR(100) NOT NULL,
+    category VARCHAR(50),
+    description TEXT,
+    price DECIMAL(10, 2) NOT NULL
+);
