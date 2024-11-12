@@ -1,0 +1,6 @@
+CREATE TABLE Order_Status (
+    order_id INT PRIMARY KEY AUTO_INCREMENT,               
+    status VARCHAR(50) NOT NULL,             
+    total_price DECIMAL(10, 2) NOT NULL,    
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id)
+);
