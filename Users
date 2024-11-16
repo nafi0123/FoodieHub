@@ -4,3 +4,11 @@ CREATE TABLE Users (
     Password VARCHAR(50) NOT NULL,
     Email VARCHAR(100) NOT NULL
 );
+
+INSERT INTO Users (User_Name, Password, Email)
+VALUES 
+    ('Alice', 'password123', 'alice@example.com'),
+    ('Bob', 'securepass', 'bob@example.com'),
+    ('Charlie', 'qwerty456', 'charlie@example.com'),
+    ('Diana', 'mypassword', 'diana@example.com'),
+    ('Eve', '12345678', 'eve@example.com');
