@@ -8,3 +8,12 @@ CREATE TABLE Orders (
     FOREIGN KEY (user_id) REFERENCES Users(User_ID) ON DELETE CASCADE ON UPDATE CASCADE,  
     FOREIGN KEY (item_id) REFERENCES Food_Items(ID) ON DELETE CASCADE ON UPDATE CASCADE   
 );
+
+
+INSERT INTO Orders (item_id, quantity, food_name, total_price, user_id)
+VALUES
+    (1, 2, "Biryani", 25.98, 1), 
+    (5, 3, "Spring Rolls", 17.97, 2), 
+    (24, 1, "Lasagna", 12.50, 3), 
+    (50, 2, "Chicken Burrito", 17.98, 4), 
+    (12, 4, "Greek Salad", 31.96, 5); 
